@@ -4,9 +4,16 @@
   font-family: "Fira Sans", serif;
 }
 :root{
+  --body-color:#F5F5F5;
   --logo-color:#0E0E0E;
   --button-color:#006A50;
   --banner-background:#C6E4D6;
+  --button-hover-background:#006A50;
+  --button-fontColor:white;
+  --bangladesh-font-color:#0E0E0E;
+}
+body{
+  background-color: var(--body-color);
 }
 /*nav section*/
 .nav{
@@ -14,12 +21,12 @@
    font-family: "Fira Sans", serif;
   font-style: normal;
   list-style: none;
-  padding: 30px 80px;
+  padding: 30px 90px;
 }
 .bangladesh{
   font-weight: 700;
   color: var(--logo-color);
-  font-size: 32px;
+  font-size: 26px;
 }
 .btn{
   width: 116px; height: 52px;
@@ -29,16 +36,195 @@
   background: none;
   font-weight: 600;
   font-size: 18px;
-  font-family: "Fira Sans", serif;
+  cursor: pointer;
+}
+.btn:hover{
+background: var(--button-hover-background);
+  color:var(--button-fontColor);
+  border: none;
+}
+#main{
+  max-width: 1180px; margin: 20px auto;
 }
 /*banner section*/
 .banner{
   background: var(--banner-background);
-  border-radius: 10px;
+  border-radius: 15px;
   width: 1180px; height: 460px;
-  margin: 30px auto; padding: 25px 20px 20px 10px;
+  padding: 30px 50px;
   display: flex; justify-content: space-between; align-items: center;
 }
+.banner-heading{
+  font-weight: 600; font-size: 16px; color: var(--bangladesh-font-color); opacity: 50%;
+  margin-bottom: 5px;
+}
+.banner-description{
+  font-weight: 700; font-size: 46px; color: var(--bangladesh-font-color); opacity: 100%;
+}
+.banner-btn{
+  width: 220px; height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: var(--button-fontColor);
+  background: var(--button-color);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.banner-btn:hover{
+  width: 250px; height: 45px;
+  background: darkmagenta;
+  color:blanchedalmond; font-size: 18px;
+  transition:width 2s, height 4s;
+}
 .banner-image{
-  width: 380px; height: 320px;
+  width: 474px; height: 400px;
+  padding: 30px;
+}
+/* pillars section */
+.mainPillars{
+ margin: 30px 0;
+}
+.Pillars-heading{
+  text-align: center;
+  margin: 15px 0; font-size:26px; font-weight: 700;
+}
+.pillar img{
+  width: 48px; height: 48px;
+}
+.pillar h4{
+  font-size: 13px;
+  color: var(--logo-color); opacity: 80%;
+
+}
+.pillar p{
+  font-size: 10px;
+  color: var(--logo-color); opacity: 70%; margin: 4px;
+}
+.pillar{
+  width:280px; height:190px;
+  background: var(--button-fontColor);
+  border-radius: 10px; text-align: center;
+  padding: 8px;
+}
+.pillars{
+  display: flex; justify-content: space-around; align-items: center;
+  gap: 15px; margin-top: 20px;
+}
+/* visions section */
+.vision-heading{
+  text-align: center;
+  margin: 15px 0; font-size:26px; font-weight: 700;
+}
+.vision-description{
+  font-size: 15px; text-align: center;
+  color: var(--logo-color); opacity: 70%; margin: 4px;
+}
+.visions{
+  display: flex; justify-content: space-around; align-items: center;
+  gap: 15px; margin-top: 20px;
+}
+.vision-digital{
+  width: 383px; height: 210px;
+  background: rgb(171, 196, 205); 
+  border-radius: 10px; text-align: center;
+  padding: 10px;
+}
+.vision-digital:hover{
+  width: 350px; height: 200px;
+  background: rgb(238, 174, 255);
+  border-radius: 20px;
+  transition: 3s;
+}
+.vision-energy{
+  width: 383px; height: 210px;
+  background: rgb(184, 234, 184); 
+  border-radius: 10px; text-align: center;
+  padding: 10px;
+}
+.vision-energy:hover{
+  width: 350px; height: 200px;
+  background: rgb(168, 160, 255);
+  border-radius: 20px;
+  transition: 3s;
+}
+.vision-infrastructure{
+  width: 383px; height: 210px;
+  background: rgb(235, 192, 174);
+  border-radius: 10px; text-align: center;
+  padding: 10px;
+}
+.vision-infrastructure:hover{
+  width: 350px; height: 200px;
+  background: rgb(160, 255, 250); 
+  border-radius: 20px;
+  transition: 3s;
+}
+.vision-img{
+  width: 48px; height: 48px; margin: 8px 0;
+}
+.vision-item{
+  font-size: 15px;
+  color: var(--logo-color); opacity: 80%; margin: 5px;
+}
+.vision-details{
+  font-size: 12px;
+  color: var(--logo-color); opacity: 70%; margin: 8px;
+}
+.vision-digital button{
+  width: 100px; height: 30px;
+  border: none;
+  border-radius: 7px;
+  color: var(--button-fontColor);
+  background:rgb(0, 89, 119);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px; 
+}
+.vision-energy button{
+  width: 100px; height: 30px;
+  border: none;
+  border-radius: 7px;
+  color: var(--button-fontColor);
+  background:rgb(0, 99, 12);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px; 
+}
+.vision-infrastructure button{
+  width: 100px; height: 30px;
+  border: none;
+  border-radius: 7px;
+  color: var(--button-fontColor);
+  background:rgba(227, 80, 7, 0.754);
+  font-weight: 600;
+  font-size: 14px;  
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* quote section */
+
+.quote-part{
+  max-width: 1180px;
+  background:url(../assets/quote-bg.png),rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+.quoteFull{
+  font-size: 13px;
+  color: var(--logo-color); opacity: 80%; margin: 10px;
+  text-align: start;
+}
+.speaker{
+  margin: 5px 10px; opacity: 70%
+  ;
+}
+.govt-title{
+  font-size: 12px;
+  color: var(--logo-color); opacity: 70%; margin: 15px 10px;
 }
