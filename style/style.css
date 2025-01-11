@@ -11,6 +11,7 @@
   --button-hover-background:#006A50;
   --button-fontColor:white;
   --bangladesh-font-color:#0E0E0E;
+  --button-background:rgb(44, 118, 52);
 }
 body{
   background-color: var(--body-color);
@@ -188,7 +189,7 @@ background: var(--button-hover-background);
   border: none;
   border-radius: 7px;
   color: var(--button-fontColor);
-  background:rgb(0, 99, 12);
+  background:rgb(0, 126, 15); 
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -307,7 +308,7 @@ width: 120px; height: 40px;
   border: none;
   border-radius: 7px;
   color: var(--button-fontColor);
-  background:rgb(44, 118, 52);    
+  background:var(--button-background);    
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -386,8 +387,25 @@ width: 120px; height: 40px;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
   color: var(--button-fontColor);
-  background:rgb(44, 118, 52);    
+  background:var(--button-background);    
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+}
+/* footer section */
+.footer{
+  display: flex;
+  flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  background: var(--button-fontColor);
+  box-shadow: 10px 10px 2px rgb(238, 222, 222);
+  margin: 20px auto;
+}
+.footer-text{
+  font-weight: 700;
+  color: var(--logo-color);
+  font-size: 26px; 
+}
+.footer-logo{
+  display: flex; justify-content: center; align-items: center; gap: 18px;
+  margin: 10px auto;
 }
