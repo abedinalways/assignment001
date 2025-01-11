@@ -403,9 +403,10 @@ width: 120px; height: 40px;
 .footer-text{
   font-weight: 700;
   color: var(--logo-color);
-  font-size: 26px; 
+  font-size: 26px;
+  margin-top: 10px;
 }
 .footer-logo{
   display: flex; justify-content: center; align-items: center; gap: 18px;
-  margin: 10px auto;
+  margin: 10px auto; cursor: pointer;
 }
