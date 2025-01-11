@@ -256,11 +256,11 @@ thead{
   text-align: center;
 }
 /* news section */
-.news-heading, .donation-heading{
+.news-heading, .donation-heading, .subscribe-heading{
   text-align: center;
   margin: 15px 0; font-size:26px; font-weight: 700;
 }
-.news-details, .donation-description{
+.news-details, .donation-description, .subscribe-details, .promise{
 font-size: 15px; text-align: center;
   color: var(--logo-color); opacity: 70%; margin: 4px;
 }
@@ -302,23 +302,92 @@ font-size: 15px;
 opacity: 60%;
 padding: 8px;
 }
-.news-btn{
-width: 100px; height: 30px;
+.news-btn, .donate-now{
+width: 120px; height: 40px;
   border: none;
   border-radius: 7px;
   color: var(--button-fontColor);
-  background:rgb(0, 99, 12);
+  background:rgb(44, 118, 52);    
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
   margin: 20px 10px;
 }
 /* donation section */
-.donation-btn{
+.donation-btns{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 880px;
-  margin: 0 auto;
-  
+  max-width: 980px;
+  margin: 40px auto;
+}
+.donation-btns button{
+  width: 180px; height: 75px;
+  border: none;
+  border-radius: 15px;
+  color: var(--bangladesh-font-color);
+  background: var(--button-fontColor);
+  opacity: 70%;
+  font-weight: 700;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 10px 10px 2px rgb(238, 222, 222);   
+}
+.donation-btns button:hover{
+    width: 250px; height: 85px;
+  background: var(--button-hover-background);
+  color:blanchedalmond; 
+  font-weight: 800;
+  font-size: 35px;
+  transition:width 2s, height 4s;
+}
+.donation-amount{
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 20px;
+}
+.other-amount{
+  width: 780px; height: 45px;
+  margin:0 auto;
+  border: none;
+  border-radius: 8px;
+  color: var(--bangladesh-font-color);
+  background: var(--button-fontColor);
+  opacity: 70%;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+.other-amount::placeholder{
+  font-size: 20px; font-weight: 500;
+}
+/* subscribe section */
+.subscribe-form{
+  display: flex; gap: 0;
+  justify-content: center; align-items: center;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+.Email-subscribe{
+  width: 480px; height: 40px;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  color: var(--bangladesh-font-color);
+  background: var(--button-fontColor);
+  opacity: 70%;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.submit-email{
+  width: 120px; height: 40px;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  color: var(--button-fontColor);
+  background:rgb(44, 118, 52);    
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
 }
