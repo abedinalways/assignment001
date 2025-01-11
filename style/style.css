@@ -256,11 +256,11 @@ thead{
   text-align: center;
 }
 /* news section */
-.news-heading{
+.news-heading, .donation-heading{
   text-align: center;
   margin: 15px 0; font-size:26px; font-weight: 700;
 }
-.news-details{
+.news-details, .donation-description{
 font-size: 15px; text-align: center;
   color: var(--logo-color); opacity: 70%; margin: 4px;
 }
@@ -312,4 +312,13 @@ width: 100px; height: 30px;
   font-size: 14px;
   cursor: pointer;
   margin: 20px 10px;
+}
+/* donation section */
+.donation-btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 880px;
+  margin: 0 auto;
+  
 }
