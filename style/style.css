@@ -228,3 +228,21 @@ background: var(--button-hover-background);
   font-size: 12px;
   color: var(--logo-color); opacity: 70%; margin: 15px 10px;
 }
+.table{
+  border-collapse: collapse;
+  max-width: fit-content; margin: 0 auto;
+  padding: 10px;
+}
+td, th{
+  padding: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  text-align: center;
+} 
+.opinion-table{
+  background: var(--button-fontColor);
+  max-width: 1180px; padding: 20px;
+}
+.opinion-heading{
+  text-align: center;
+  margin: 15px 0; font-size:26px; font-weight: 700;
+}
