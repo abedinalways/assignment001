@@ -216,8 +216,8 @@ background: var(--button-hover-background);
   margin: 30px auto;
 }
 .quoteFull{
-  font-size: 13px;
-  color: var(--logo-color); opacity: 80%; margin: 10px;
+  font-size: 13px; font-weight: 400;
+  color: var(--logo-color); opacity: 90%; margin: 10px;
   text-align: start;
 }
 .speaker{
@@ -228,15 +228,16 @@ background: var(--button-hover-background);
   font-size: 12px;
   color: var(--logo-color); opacity: 70%; margin: 15px 10px;
 }
+/* opinion section */
 .table{
   border-collapse: collapse;
-  max-width: fit-content; margin: 0 auto;
-  padding: 10px;
+  margin: 0 auto;
 }
 td, th{
   padding: 10px;
   border: 1px solid rgb(199, 199, 199);
   text-align: center;
+
 } 
 .opinion-table{
   background: var(--button-fontColor);
@@ -245,4 +246,70 @@ td, th{
 .opinion-heading{
   text-align: center;
   margin: 15px 0; font-size:26px; font-weight: 700;
+}
+thead{
+  background-color: #C6E4D6;
+}
+.select option{
+  border-radius: 8px;
+  background-color: #C6E4D6;
+  text-align: center;
+}
+/* news section */
+.news-heading{
+  text-align: center;
+  margin: 15px 0; font-size:26px; font-weight: 700;
+}
+.news-details{
+font-size: 15px; text-align: center;
+  color: var(--logo-color); opacity: 70%; margin: 4px;
+}
+.news-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--button-fontColor);
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 20px 25px;
+  gap: 30px;
+  color: var(--bangladesh-font-color);
+}
+.description{
+  text-align: start;
+  padding: 10px;
+}
+.news-headline{
+font-size: 20px;
+opacity: 70%;
+padding: 10px;
+}
+.news-channel{
+  max-width: 80px;
+  padding: 2px;
+}
+.news-picture{
+max-width: 350px;
+border-radius: 10px;
+}
+.news-time{
+font-size: 12px;
+opacity: 50%;
+padding: 7px;
+}
+.news-summary{
+font-size: 15px;
+opacity: 60%;
+padding: 8px;
+}
+.news-btn{
+width: 100px; height: 30px;
+  border: none;
+  border-radius: 7px;
+  color: var(--button-fontColor);
+  background:rgb(0, 99, 12);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 20px 10px;
 }
